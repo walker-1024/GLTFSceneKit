@@ -37,7 +37,7 @@ import GLTFSceneKit
 var scene: SCNScene
 do {
   let sceneSource = try GLTFSceneSource(named: "art.scnassets/Box/glTF/Box.gltf")
-  scene = try sceneSource.scene()
+  scene = try sceneSource.theScene()
 } catch {
   print("\(error.localizedDescription)")
   return

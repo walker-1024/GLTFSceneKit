@@ -73,6 +73,11 @@ public class GLTFSceneSource : SCNSceneSource {
         #endif
     }
     
+    /// Please use `theScene` instead of `scene` in Swift
+    public func theScene() throws -> SCNScene {
+        try scene()
+    }
+    
     /*
     public func cameraNodes() -> [SCNNode] {
         var cameraNodes = [SCNNode]()
